@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Class 10 Board Exam Masterclass — MR Coaching Centre</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --blue:#0b66ff;
+      --dark-blue:#0646c6;
+      --muted:#6b7280;
+      --red:#e12b2b;
+      --card:#f8fbff;
+      --radius:12px;
+    }
+    html{scroll-behavior:smooth}
+    body{font-family:'Poppins',Inter,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial; margin:0; color:#0f1724; background:#ffffff}
+    header{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;border-bottom:1px solid #eef2ff}
+    .brand{display:flex;gap:12px;align-items:center}
+    .logo{background:var(--blue);color:#fff;padding:10px 14px;border-radius:8px;font-weight:700}
+    .tag{font-size:13px;color:var(--muted)}
+    nav a{color:var(--dark-blue);text-decoration:none;margin-left:18px;font-weight:600}
+
+    .container{max-width:1100px;margin:28px auto;padding:0 20px}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;margin-top:18px}
+    .hero-left h1{font-size:34px;line-height:1.05;margin:0 0 12px}
+    .hero-left p{color:var(--muted);font-size:16px;margin:0 0 18px}
+    .cta-group{display:flex;gap:12px;align-items:center}
+    .btn{background:var(--blue);color:#fff;padding:12px 18px;border-radius:10px;border:0;font-weight:700;cursor:pointer;box-shadow:0 6px 18px rgba(11,102,255,0.18)}
+    .btn.secondary{background:transparent;color:var(--dark-blue);border:2px solid rgba(11,102,255,0.12)}
+
+    .hero-card{background:linear-gradient(180deg, #ffffff, var(--card));padding:22px;border-radius:14px;box-shadow:0 8px 30px rgba(8,30,78,0.06)}
+    .small{font-size:13px;color:var(--muted)}
+
+    /* Benefits */
+    .benefits{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:28px}
+    .benefit{background:#fff;border-radius:10px;padding:14px;border:1px solid #eef6ff;display:flex;gap:12px;align-items:start}
+    .bullet{width:42px;height:42px;border-radius:10px;background:linear-gradient(180deg,var(--blue),var(--dark-blue));color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700}
+
+    /* Countdown */
+    .countdown{display:flex;gap:12px;margin-top:18px}
+    .timebox{background:#fff;padding:12px 14px;border-radius:10px;text-align:center;min-width:80px;border:1px solid #eef4ff}
+    .timebox .num{font-size:20px;font-weight:700}
+    .timebox .lbl{font-size:12px;color:var(--muted)}
+
+    /* Urgency */
+    .urgency{margin-top:18px;padding:12px;border-radius:10px;background:linear-gradient(90deg,#fff1f1,#fff);border:1px solid rgba(225,43,43,0.06)}
+    .urgency strong{color:var(--red)}
+
+    /* Registration */
+    .register{margin-top:20px}
+    .form-wrap{border-radius:12px;overflow:hidden;border:1px solid #eef6ff}
+    .form-placeholder{padding:40px;text-align:center;color:var(--muted);background:#fbfdff}
+
+    footer{margin-top:36px;padding:22px;border-top:1px solid #f1f5ff;color:var(--muted);display:flex;justify-content:space-between;align-items:center}
+
+    /* Responsive */
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr;}
+      .benefits{grid-template-columns:1fr}
+      .countdown{flex-wrap:wrap}
+      .timebox{min-width:64px}
+      header{padding:12px}
+      .hero-left h1{font-size:28px}
+    }
+
+    @media(max-width:480px){
+      .btn{width:100%}
+      .cta-group{flex-direction:column;align-items:stretch}
+      footer{flex-direction:column;gap:12px;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">MR</div>
+      <div>
+        <div style="font-weight:700">MR Coaching Centre</div>
+        <div class="tag">11 years of excellence</div>
+      </div>
+    </div>
+    <nav>
+      <a href="#benefits">Benefits</a>
+      <a href="#countdown">Countdown</a>
+      <a href="#register">Register</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" aria-label="Hero">
+      <div class="hero-left">
+        <h1>Free Class 10 Board Exam Strategy Session</h1>
+        <p>Join focused, subject-specific masterclasses in <strong>Maths</strong> and <strong>Science</strong> taught by expert faculty — designed to boost your Class 10 board exam scores for the Karnataka Board.</p>
+        <div class="cta-group">
+          <a class="btn" href="#register">Register Now</a>
+          <button class="btn secondary" onclick="document.getElementById('countdown').scrollIntoView({behavior:'smooth'})">See Countdown</button>
+        </div>
+
+        <div id="benefits" style="margin-top:22px">
+          <h3 style="margin:0 0 12px">What you'll gain</h3>
+          <div class="benefits">
+            <div class="benefit"><div class="bullet">S</div><div><strong>Smart study strategy</strong><div class="small">Study smarter, not harder — focused plans tailored for boards.</div></div></div>
+            <div class="benefit"><div class="bullet">C</div><div><strong>Important chapters focus</strong><div class="small">Prioritise high-weightage chapters and scoring topics.</div></div></div>
+            <div class="benefit"><div class="bullet">E</div><div><strong>Exam writing techniques</strong><div class="small">How to answer for maximum marks and presentation tips.</div></div></div>
+            <div class="benefit"><div class="bullet">T</div><div><strong>Time management tips</strong><div class="small">Complete papers within time; smart revision schedules.</div></div></div>
+            <div class="benefit"><div class="bullet">D</div><div><strong>Live doubt solving</strong><div class="small">Ask questions live and get instant clarifications.</div></div></div>
+          </div>
+        </div>
+      </div>
+
+      <aside class="hero-card" aria-label="Registration card">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:14px">
+          <div>
+            <div style="font-weight:700">Free Class 10 Board Exam Masterclass</div>
+            <div class="small">Instructors: Tabrez (IITian) — Science; Nagma (M.Sc Maths) — Maths</div>
+          </div>
+          <div class="small">For Karnataka Board students</div>
+        </div>
+
+        <div id="countdown">
+          <div style="font-size:13px;color:var(--muted);margin-bottom:8px">Starts In</div>
+          <div class="countdown" role="timer" aria-live="polite">
+            <div class="timebox"><div class="num" id="days">00</div><div class="lbl">Days</div></div>
+            <div class="timebox"><div class="num" id="hours">00</div><div class="lbl">Hours</div></div>
+            <div class="timebox"><div class="num" id="minutes">00</div><div class="lbl">Minutes</div></div>
+            <div class="timebox"><div class="num" id="seconds">00</div><div class="lbl">Seconds</div></div>
+          </div>
+        </div>
+
+        <div class="urgency" style="margin-top:14px">
+          <div style="font-size:15px"><strong style="color:var(--red)">Limited Seats Only</strong></div>
+          <div class="small">Registration closes once seats are filled. Last date to register: <strong>21st February 2026</strong></div>
+        </div>
+
+        <div style="margin-top:14px">
+          <a class="btn" href="#register">Register Now</a>
+        </div>
+      </aside>
+    </section>
+
+    <section id="register" class="register">
+      <h2 style="margin-bottom:8px">Register</h2>
+      <div class="form-wrap">
+        <!-- Paste your Google Form embed code below (replace the placeholder iframe) -->
+        <!-- [PASTE YOUR GOOGLE FORM EMBED CODE HERE] -->
+        <div class="form-placeholder">
+          Replace the placeholder below with your Google Form embed code.
+          <div style="margin-top:14px;color:var(--muted)">Example placeholder iframe (replace):</div>
+          <div style="margin-top:12px;background:#fff;border-radius:8px;padding:12px;display:inline-block;min-width:260px">
+            <!-- Embedded Google Form (official link) -->
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeY_3p2CKMhqjj5FcyHE2qtubfWvJcOzKJP8N4fAtDVldFMJA/viewform?embedded=true" title="Registration Form" style="width:100%;min-width:280px;height:700px;border:0" loading="lazy"></iframe>
+            <!-- Fallback: direct form link if embed doesn't render -->
+            <div style="margin-top:10px;font-size:13px;color:var(--muted)">If the form doesn't show, open it here: <a href="https://docs.google.com/forms/d/e/1FAIpQLSeY_3p2CKMhqjj5FcyHE2qtubfWvJcOzKJP8N4fAtDVldFMJA/viewform?usp=sharing" target="_blank" rel="noopener" style="color:var(--blue)">Open registration form</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <div style="font-weight:700">MR Coaching Centre</div>
+        <div class="small">Address: 1st Floor, Above Cake Bazar, Dr. Rajkumar Road, Mysore - 570019</div>
+        <div class="small">Phone: 6361192765 / 9113973879</div>
+        <div class="small">Email: mrcoachingcentreofficial@gmail.com</div>
+        <div class="small"><a href="http://www.mrlearnings.com" style="color:var(--blue);text-decoration:none">www.mrlearnings.com</a></div>
+      </div>
+      <div style="text-align:right">
+        <div style="font-weight:700">WhatsApp</div>
+        <div class="small">+91-6361192765</div>
+        <div style="margin-top:8px"><a href="https://wa.me/916361192765" style="color:var(--blue);text-decoration:none">Message on WhatsApp</a></div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    // CONFIGURE: set your target date/time here (ISO format).
+    // Countdown set to last registration date: 21st Feb 2026 23:59:59
+    const TARGET_ISO = '2026-02-21T23:59:59';
+
+    const targetDate = new Date(TARGET_ISO);
+
+    function pad(n){return n.toString().padStart(2,'0')}
+
+    function updateCountdown(){
+      const now = new Date();
+      let diff = Math.max(0, targetDate - now);
+      const days = Math.floor(diff / (1000*60*60*24));
+      diff -= days*(1000*60*60*24);
+      const hours = Math.floor(diff / (1000*60*60));
+      diff -= hours*(1000*60*60);
+      const minutes = Math.floor(diff / (1000*60));
+      diff -= minutes*(1000*60);
+      const seconds = Math.floor(diff / 1000);
+
+      document.getElementById('days').textContent = pad(days);
+      document.getElementById('hours').textContent = pad(hours);
+      document.getElementById('minutes').textContent = pad(minutes);
+      document.getElementById('seconds').textContent = pad(seconds);
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+
+    // Make the CTA anchor smooth on click (extra UX)
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const href = a.getAttribute('href');
+        if(href && href.startsWith('#')){
+          e.preventDefault();
+          const el = document.querySelector(href);
+          if(el) el.scrollIntoView({behavior:'smooth',block:'start'});
+        }
+      })
+    })
+  </script>
+</body>
+</html>
